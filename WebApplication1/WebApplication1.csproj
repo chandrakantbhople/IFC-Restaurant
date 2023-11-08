@@ -1,0 +1,369 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D3CEB5F7-7301-44A0-8AD4-8AEEABA4E2C3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebApplication1</RootNamespace>
+    <AssemblyName>WebApplication1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44396</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Indian Food Court\about1.aspx" />
+    <Content Include="Indian Food Court\Alert.aspx" />
+    <Content Include="Indian Food Court\blog-details.html" />
+    <Content Include="Indian Food Court\bootstrap.bundle.min.js" />
+    <Content Include="Indian Food Court\contact1.aspx" />
+    <Content Include="Indian Food Court\css\all.min.css" />
+    <Content Include="Indian Food Court\css\animate.css" />
+    <Content Include="Indian Food Court\css\baguetteBox.min.css" />
+    <Content Include="Indian Food Court\css\bootstrap.min.css" />
+    <Content Include="Indian Food Court\css\classic.css" />
+    <Content Include="Indian Food Court\css\classic.date.css" />
+    <Content Include="Indian Food Court\css\classic.time.css" />
+    <Content Include="Indian Food Court\css\custom.css" />
+    <Content Include="Indian Food Court\css\font-awesome.min.css" />
+    <Content Include="Indian Food Court\css\Login1.css" />
+    <Content Include="Indian Food Court\css\responsive.css" />
+    <Content Include="Indian Food Court\css\style.css" />
+    <Content Include="Indian Food Court\css\superslides.css" />
+    <Content Include="Indian Food Court\dinner.aspx" />
+    <Content Include="Indian Food Court\fonts\fontawesome-webfont.svg" />
+    <Content Include="Indian Food Court\gallery1.aspx" />
+    <Content Include="Indian Food Court\Home1.aspx" />
+    <Content Include="Indian Food Court\images1\Barfi.jpg" />
+    <Content Include="Indian Food Court\images1\bgHeader.jpg" />
+    <Content Include="Indian Food Court\images1\bgMain.jpg" />
+    <Content Include="Indian Food Court\images1\chef.jpg" />
+    <Content Include="Indian Food Court\images1\Chicken Biryani.jpg" />
+    <Content Include="Indian Food Court\images1\Chicken Thali.jpg" />
+    <Content Include="Indian Food Court\images1\CholaPuri.jpg" />
+    <Content Include="Indian Food Court\images1\Dal Tadka.jpg" />
+    <Content Include="Indian Food Court\images1\Dhokla %281%29.jpg" />
+    <Content Include="Indian Food Court\images1\Dosa.jpeg" />
+    <Content Include="Indian Food Court\images1\Egg Thali.jpg" />
+    <Content Include="Indian Food Court\images1\Gulab Jamun.jpg" />
+    <Content Include="Indian Food Court\images1\IdleSamber.jpg" />
+    <Content Include="Indian Food Court\images1\kabir-cheema-8T9AVksyt7s-unsplash.jpg" />
+    <Content Include="Indian Food Court\images1\Kaju Kathli.jpg" />
+    <Content Include="Indian Food Court\images1\LoginIMG.jpg" />
+    <Content Include="Indian Food Court\images1\Maaza.jpg" />
+    <Content Include="Indian Food Court\images1\MenduWada.jpg" />
+    <Content Include="Indian Food Court\images1\Motichoor.jpg" />
+    <Content Include="Indian Food Court\images1\Panjabi Thali.jpg" />
+    <Content Include="Indian Food Court\images1\paratha %281%29.jpg" />
+    <Content Include="Indian Food Court\images1\Patodi.jpg" />
+    <Content Include="Indian Food Court\images1\Pav Bhaji %281%29.jpg" />
+    <Content Include="Indian Food Court\images1\Pepsi.jpg" />
+    <Content Include="Indian Food Court\images1\Pista Ice_cream.jpg" />
+    <Content Include="Indian Food Court\images1\Pista Kulfi.jpg" />
+    <Content Include="Indian Food Court\images1\Roti.jpg" />
+    <Content Include="Indian Food Court\images1\Samosa %281%29.jpg" />
+    <Content Include="Indian Food Court\images1\Sprite %281%29.jpg" />
+    <Content Include="Indian Food Court\images1\umesh-soni-g1qlhFbWPKg-unsplash.jpg" />
+    <Content Include="Indian Food Court\images\about-img.jpg" />
+    <Content Include="Indian Food Court\images\all-bg.jpg" />
+    <Content Include="Indian Food Court\images\avt-img.jpg" />
+    <Content Include="Indian Food Court\images\blog-img-01.jpg" />
+    <Content Include="Indian Food Court\images\blog-img-02.jpg" />
+    <Content Include="Indian Food Court\images\blog-img-03.jpg" />
+    <Content Include="Indian Food Court\images\blog-img-04.jpg" />
+    <Content Include="Indian Food Court\images\blog-img-05.jpg" />
+    <Content Include="Indian Food Court\images\blog-img-06.jpg" />
+    <Content Include="Indian Food Court\images\blog-img-07.jpg" />
+    <Content Include="Indian Food Court\images\blog-img-08.jpg" />
+    <Content Include="Indian Food Court\images\blog-img-09.jpg" />
+    <Content Include="Indian Food Court\images\chef.jpeg" />
+    <Content Include="Indian Food Court\images\footer-bg.jpg" />
+    <Content Include="Indian Food Court\images\gallery-img-01.jpg" />
+    <Content Include="Indian Food Court\images\gallery-img-02.jpg" />
+    <Content Include="Indian Food Court\images\gallery-img-03.jpg" />
+    <Content Include="Indian Food Court\images\gallery-img-04.jpg" />
+    <Content Include="Indian Food Court\images\gallery-img-05.jpg" />
+    <Content Include="Indian Food Court\images\gallery-img-06.jpg" />
+    <Content Include="Indian Food Court\images\img-01.jpg" />
+    <Content Include="Indian Food Court\images\img-02.jpg" />
+    <Content Include="Indian Food Court\images\img-03.jpg" />
+    <Content Include="Indian Food Court\images\img-04.jpg" />
+    <Content Include="Indian Food Court\images\img-05.jpg" />
+    <Content Include="Indian Food Court\images\img-06.jpg" />
+    <Content Include="Indian Food Court\images\img-07.jpg" />
+    <Content Include="Indian Food Court\images\img-08.jpg" />
+    <Content Include="Indian Food Court\images\img-09.jpg" />
+    <Content Include="Indian Food Court\images\inner-blog-img.jpg" />
+    <Content Include="Indian Food Court\images\logo.png" />
+    <Content Include="Indian Food Court\images\post-img-01.jpg" />
+    <Content Include="Indian Food Court\images\post-img-02.jpg" />
+    <Content Include="Indian Food Court\images\post-img-03.jpg" />
+    <Content Include="Indian Food Court\images\profile-1.jpg" />
+    <Content Include="Indian Food Court\images\profile-3.jpg" />
+    <Content Include="Indian Food Court\images\profile-7.jpg" />
+    <Content Include="Indian Food Court\images\qt-bg.jpg" />
+    <Content Include="Indian Food Court\images\slider-01.jpg" />
+    <Content Include="Indian Food Court\images\slider-02.jpg" />
+    <Content Include="Indian Food Court\images\slider-03.jpg" />
+    <Content Include="Indian Food Court\images\stuff-img-01.jpg" />
+    <Content Include="Indian Food Court\images\stuff-img-02.jpg" />
+    <Content Include="Indian Food Court\images\stuff-img-03.jpg" />
+    <Content Include="Indian Food Court\js\baguetteBox.min.js" />
+    <Content Include="Indian Food Court\js\bootstrap.bundle.min.js" />
+    <Content Include="Indian Food Court\js\bootstrap.min.js" />
+    <Content Include="Indian Food Court\js\contact-form-script.js" />
+    <Content Include="Indian Food Court\js\custom.js" />
+    <Content Include="Indian Food Court\js\form-validator.min.js" />
+    <Content Include="Indian Food Court\js\images-loded.min.js" />
+    <Content Include="Indian Food Court\js\isotope.min.js" />
+    <Content Include="Indian Food Court\js\jquery-3.2.1.min.js" />
+    <Content Include="Indian Food Court\js\jquery.mapify.js" />
+    <Content Include="Indian Food Court\js\jquery.superslides.min.js" />
+    <Content Include="Indian Food Court\js\legacy.js" />
+    <Content Include="Indian Food Court\js\picker.date.js" />
+    <Content Include="Indian Food Court\js\picker.js" />
+    <Content Include="Indian Food Court\js\picker.time.js" />
+    <Content Include="Indian Food Court\js\popper.min.js" />
+    <Content Include="Indian Food Court\Login.aspx" />
+    <Content Include="Indian Food Court\Lunch.aspx" />
+    <Content Include="Indian Food Court\menu1.aspx" />
+    <Content Include="Indian Food Court\php\form-process.php" />
+    <Content Include="Indian Food Court\PopUp.aspx" />
+    <Content Include="Indian Food Court\Reservation1.aspx" />
+    <Content Include="Indian Food Court\SignUpTemp.aspx" />
+    <Content Include="Indian Food Court\WebForm1.aspx" />
+    <Content Include="Indian Food Court\dessert.aspx" />
+    <Content Include="NewImg\mainBackground.jpg" />
+    <Content Include="NewImg\review1.jpeg" />
+    <Content Include="NewImg\Review2.jpeg" />
+    <Content Include="NewImg\review3.jpeg" />
+    <Content Include="NewImg\Slider1.jpeg" />
+    <Content Include="NewImg\Slider2.jpeg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Indian Food Court\about1.aspx.cs">
+      <DependentUpon>about1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\about1.aspx.designer.cs">
+      <DependentUpon>about1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\Alert.aspx.cs">
+      <DependentUpon>Alert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\Alert.aspx.designer.cs">
+      <DependentUpon>Alert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\contact1.aspx.cs">
+      <DependentUpon>contact1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\contact1.aspx.designer.cs">
+      <DependentUpon>contact1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\dinner.aspx.cs">
+      <DependentUpon>dinner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\dinner.aspx.designer.cs">
+      <DependentUpon>dinner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\gallery1.aspx.cs">
+      <DependentUpon>gallery1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\gallery1.aspx.designer.cs">
+      <DependentUpon>gallery1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\Home1.aspx.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\Home1.aspx.designer.cs">
+      <DependentUpon>Home1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\LoginPage.cs" />
+    <Compile Include="Indian Food Court\Lunch.aspx.cs">
+      <DependentUpon>Lunch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\Lunch.aspx.designer.cs">
+      <DependentUpon>Lunch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\menu1.aspx.cs">
+      <DependentUpon>menu1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\menu1.aspx.designer.cs">
+      <DependentUpon>menu1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\PopUp.aspx.cs">
+      <DependentUpon>PopUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\PopUp.aspx.designer.cs">
+      <DependentUpon>PopUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\Reservation1.aspx.cs">
+      <DependentUpon>Reservation1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\Reservation1.aspx.designer.cs">
+      <DependentUpon>Reservation1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\Site2.Master.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\Site2.Master.designer.cs">
+      <DependentUpon>Site2.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\SignUpTemp.aspx.cs">
+      <DependentUpon>SignUpTemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\SignUpTemp.aspx.designer.cs">
+      <DependentUpon>SignUpTemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Indian Food Court\dessert.aspx.cs">
+      <DependentUpon>dessert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Indian Food Court\dessert.aspx.designer.cs">
+      <DependentUpon>dessert.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Indian Food Court\fonts\fontawesome-webfont.eot" />
+    <Content Include="Indian Food Court\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Indian Food Court\fonts\fontawesome-webfont.woff" />
+    <Content Include="Indian Food Court\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Indian Food Court\fonts\FontAwesome.otf" />
+    <Content Include="Indian Food Court\Site2.Master" />
+    <Content Include="Indian Food Court\webfonts\fa-brands-400.ttf" />
+    <Content Include="Indian Food Court\webfonts\fa-brands-400.woff2" />
+    <Content Include="Indian Food Court\webfonts\fa-regular-400.ttf" />
+    <Content Include="Indian Food Court\webfonts\fa-regular-400.woff2" />
+    <Content Include="Indian Food Court\webfonts\fa-solid-900.ttf" />
+    <Content Include="Indian Food Court\webfonts\fa-solid-900.woff2" />
+    <Content Include="Indian Food Court\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="Indian Food Court\webfonts\fa-v4compatibility.woff2" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56266</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44396/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
