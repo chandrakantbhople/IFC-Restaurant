@@ -1,4 +1,4 @@
-<h1>IFC-Restaurant <h1><br>
+<h1>IFC-Restaurant </h1><br>
 
 Welcome to IFC-Restaurant, a dynamic and user-friendly web application developed by Chandrakant Bhople, an aspiring ASP.NET developer. This project showcases a combination of skills in ASP.NET, C#, Bootstrap, HTML, CSS, and SQL Server, resulting in a fully functional and aesthetically pleasing restaurant management system.
 
